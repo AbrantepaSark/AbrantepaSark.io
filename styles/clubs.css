@@ -35,6 +35,14 @@
   margin: 50px auto;
   display: flex;
 }
+
+@media screen and (max-width: 980px) {
+  .slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    row-gap: 50px;
+  }
+}
 .slider .card {
   flex: 1;
   margin: 0 10px;
@@ -58,6 +66,7 @@
   font-weight: 600;
   color: #e74c3c;
   line-height: 20px;
+  margin-top: 10px;
 }
 .card .content p {
   text-align: justify;
